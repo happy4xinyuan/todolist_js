@@ -1,0 +1,91 @@
+h1{
+	background: #7cd2f7;
+	margin:0;
+	color: white;
+	padding:5px 30px;
+	text-transform: uppercase ;
+	font-weight: 700;
+	font-size: 25px;
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+}
+.fa-plus{
+	float: right;
+}
+
+span{
+	background: red;
+	text-align: center;
+	
+	height: 35px;
+	/*padding:0 5px;*/
+	margin-right: 10px;
+	color: white;
+	display: inline-block;
+	/*不知道这里咋用的*/
+	transition: 0.3s linear;
+
+	width: 0;
+	opacity: 0;
+	/*设置能见度,优化显示*/
+}
+/*有意思的写法 表示hover的li里面的span*/
+li:hover span{
+	width: 35px;
+	opacity: 1.0;
+}
+
+ul{
+	list-style: none; 
+	/*ul前面的小点的样式*/
+	margin: 0;
+	padding:0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+li{
+	background: #fff;
+	height: 35px;
+	line-height: 35px;
+	padding:0;
+}
+li:nth-of-type(2n){
+	background: #f7f7f7;
+}
+
+input{
+	padding:3px 30px 3px 30px;
+	width: 100%;
+	/*width 表示content的大小,没有考虑padding和margin*/
+	box-sizing: border-box; 
+	/*box-sizing设定box模型的大小选择,默认为content-box,即width和height的计算只含有content.
+	border-box表示计算包含padding和border*/
+	outline-style: none;
+	/*输入框周围的border*/
+	border: 3px solid rgba(178, 255, 148, 0.5);
+	font-size: 20px;
+	display: none;
+}
+
+input:focus{
+	border:3px solid rgba(108, 255, 188, 0.7);
+
+}
+.container{
+	background: #f7f7f7;
+	width: 360px;
+	margin: 100px auto;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.finished{
+	color: gray;
+	text-decoration: line-through;
+}
+
+body{
+background: #acb6e5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
